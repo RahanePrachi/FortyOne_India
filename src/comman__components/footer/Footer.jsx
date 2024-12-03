@@ -14,9 +14,9 @@ const Footer = () => {
           {/* left side */}
           <div className="my-12 flex lg:w-[40%] flex-col gap-6">
             {/* Logo image */}
-            <div className="flex items-center gap-4 bg-white text-[#1C1C1C] justify-center w-[40%] py-2">
-              <img src={logo} alt="logo" height={40} width={40} />
-              <p className="text-xl font-semibold font-montserrat">41 India</p>
+            <div className="h-25 flex items-center gap-4 bg-white text-[#1C1C1C] justify-center w-[40%] py-2">
+              <img src={logo} alt="logo" className="pl-5 pr-5 mt-2 mb-2"/>
+              {/* <p className="text-xl font-semibold font-montserrat">41 India</p> */}
             </div>
             <div className="w-[40%] flex flex-col gap-6">
               <h3 className="font-montserrat font-bold leading-6 text-2xl">
