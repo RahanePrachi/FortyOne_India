@@ -1,42 +1,54 @@
-import React from 'react'
+import React from "react";
 import { RiFacebookBoxFill } from "react-icons/ri";
 import { IoLogoInstagram } from "react-icons/io5";
 import { ImTwitter } from "react-icons/im";
 import { BsYoutube } from "react-icons/bs";
+import logo from "../../assets/logo.png";
 
 const Footer = () => {
   return (
-    <div className='text-white bg-blue-950  '>
-      {/* upper part */}
-      <div className='flex flex-col w-11/12 items-center justify-evenly lg:gap-10 lg:flex-row '>
-        {/* left side */}
-        <div className='my-12 flex lg:w-[40%] flex-col gap-3'>
-          {/* Logo image */}
-          {/* <img src="" alt="" /> */}
-          <p>41 India</p>
-          <p>Get In Touch</p>
-          <p>the quick for jumps over the lazy dog</p>
-          <div className='flex gap-2'>
-            <RiFacebookBoxFill className='text-blue-500 bg-transparent'/>
-            <IoLogoInstagram className='text-red-500 bg-transparent'/>
-            <ImTwitter className='text-blue-400'/>
-            <BsYoutube className='text-red-500'/>
+    <div className="text-white bg-[#252B42]  ">
+      <div className=" mx-auto flex w-10/12 max-w-maxContent flex-col justify-between gap-10 relative  py-[60px]">
+        {/* upper part */}
+        <div className="flex flex-col lg:gap-10 lg:flex-row justify-between">
+          {/* left side */}
+          <div className="my-12 flex lg:w-[40%] flex-col gap-6">
+            {/* Logo image */}
+            <div className="flex items-center gap-4 bg-white text-[#1C1C1C] justify-center w-[40%] py-2">
+              <img src={logo} alt="logo" height={40} width={40} />
+              <p className="text-xl font-semibold font-montserrat">41 India</p>
+            </div>
+            <div className="w-[40%] flex flex-col gap-6">
+              <h3 className="font-montserrat font-bold leading-6 text-2xl">
+                Get In Touch
+              </h3>
+              <p className="font-montserrat text-sm font-medium">
+                the quick for jumps over the lazy dog
+              </p>
+            </div>
+            <div className="flex gap-x-5 h-6">
+              <RiFacebookBoxFill className="text-blue-500 bg-transparent  w-6 h-full" />
+              <IoLogoInstagram className="text-red-500 bg-transparent w-6 h-full" />
+              <ImTwitter className="text-blue-400 w-6 h-full" />
+              <BsYoutube className="text-red-500 w-6 h-full" />
+            </div>
           </div>
-          
 
-
-        </div>
-
-        {/* right side */}
-        <div className='my-12 flex lg:w-[40%] flex-col gap-3'>
-            <p>Company Info</p>
-            <p>about us</p>
+          {/* right side */}
+          <div className="my-12 flex lg:w-[40%] flex-col gap-2.5">
+            <h3 className="font-montserrat font-bold leading-6 text-2xl">Company Info</h3>
+            <p className="font-montserrat font-semibold text-sm ">About Us</p>
+          </div>
         </div>
       </div>
 
-      <div className='text-center bg-blue-900'>© 2024 | 41 India | Made By M.A.D.</div>
+      <div className="text-center bg-[#384163] py-[25px] pb-[25px] ">
+        <h6 className="text-[#BDBDBD] leading-6 text-sm font-semibold font-montserrat">
+        ©️ 2024 | 41 India | ️Made By M.A.D
+        </h6>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

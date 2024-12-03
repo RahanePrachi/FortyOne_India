@@ -7,7 +7,7 @@ import { Button } from 'react-bootstrap';
 import { FaUser } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../../App.css'
-import logo from '../../assets/Logo.png'
+import logo from './Logo.png'
 const Header = () => {
     return (
 
