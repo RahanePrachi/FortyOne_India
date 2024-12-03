@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+.custom-dropdown .dropdown-menu {
+  border-radius: 0 !important; /* Sharp corners */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.custom-outline {
+  border-color: #7c7c91 !important; /* Custom outline color */
+  color: #000099 !important; /* Custom text color */
+  border-radius: 20px; /* Rounded corners */
+  text-align: center; /* Ensure text is centered */
+  display: flex; /* Ensures text aligns when button is resized */
+  justify-content: center; /* Horizontal centering */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+   /* Vertical centering */
 }
 
-.App-link {
-  color: #61dafb;
+.custom-outline:hover {
+  background-color: #000099 !important; /* Change background on hover */
+  color: white !important; /* Text color on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-filled:hover {
+  background-color: white !important; /* Change background on hover */
+  color: #000099 !important; /* Text color on hover */
+  
 }
+
+.custom-filled {
+  background-color: #000099 !important; 
+  border-color: #000099 !important; /* Custom outline color */
+  color: white !important; /* Custom text color */
+  border-radius: 20px; /* Rounded corners */
+  text-align: center; /* Ensure text is centered */
+  display: flex; /* Ensures text aligns when button is resized */
+  justify-content: center; /* Horizontal centering */
+  align-items: center;/* Vertical centering */
+}
+
+
