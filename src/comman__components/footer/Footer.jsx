@@ -13,6 +13,7 @@ const Footer = () => {
         <div className='my-12 flex lg:w-[40%] flex-col gap-3'>
           {/* Logo image */}
           {/* <img src="" alt="" /> */}
+          <p>41 India</p>
           <p>Get In Touch</p>
           <p>the quick for jumps over the lazy dog</p>
           <div className='flex gap-2'>
