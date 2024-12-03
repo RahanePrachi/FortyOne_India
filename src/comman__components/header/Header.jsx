@@ -5,16 +5,18 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button } from 'react-bootstrap';
 import { FaUser } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import '../../App.css'
+import logo from '../../assets/Logo.png'
 const Header = () => {
     return (
 
         <Navbar expand="lg" className="bg-body-tertiary justify-content-center">
             <Container className="d-flex justify-content-center">
                 
-                <Navbar.Brand href="#home" className="me-2 w-0">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="/" ><img src={logo} style={{maxHeight:"40px "}} alt="41 India logo"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
                     <Nav className="me-auto justify-content-center w-100">
                         <NavDropdown
                             title="About us"
@@ -69,12 +71,12 @@ const Header = () => {
                             <NavDropdown.Item href="#action/3.2">Ladies Circle India</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">41 BnB</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#events">Events</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
-                        <Nav.Item> <Button className="pt-1 ms-2 custom-outline text-center" variant="outline-dark">
+                        <Nav.Link as={Link} to="/events">Events</Nav.Link>
+                        <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
+                        <Nav.Item> <Button className="mt-1 mb-1 mr-1 custom-outline text-center" variant="outline-dark">
                             Donate
                         </Button></Nav.Item>
-                        <Nav.Item> <Button className="pt-1 ms-2 custom-filled text-center" variant="outline-dark">
+                        <Nav.Item> <Button className=" mt-1 mb-1 mr-1  custom-filled text-center" variant="outline-dark">
                         <FaUser className='me-1' />Member
                         </Button></Nav.Item>
                     </Nav>

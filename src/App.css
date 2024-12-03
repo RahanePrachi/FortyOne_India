@@ -13,25 +13,40 @@
 }
 
 .custom-outline:hover {
-  background-color: #000099 !important; /* Change background on hover */
+  background-color: #124F92 !important; /* Change background on hover */
   color: white !important; /* Text color on hover */
 }
 
 .custom-filled:hover {
   background-color: white !important; /* Change background on hover */
-  color: #000099 !important; /* Text color on hover */
+  color: #124F92 !important; /* Text color on hover */
   
 }
 
 .custom-filled {
-  background-color: #000099 !important; 
-  border-color: #000099 !important; /* Custom outline color */
+  background-color: #124F92 !important; 
+  border-color: #124F92 !important; /* Custom outline color */
   color: white !important; /* Custom text color */
   border-radius: 20px; /* Rounded corners */
   text-align: center; /* Ensure text is centered */
   display: flex; /* Ensures text aligns when button is resized */
   justify-content: center; /* Horizontal centering */
   align-items: center;/* Vertical centering */
+}
+
+.contact-btn {
+  background-color: #2091f9 !important; 
+  border-color: #2091f9 !important; /* Custom outline color */
+  color: white !important; /* Custom text color */
+  border-radius: 20px; /* Rounded corners */
+  text-align: center; /* Ensure text is centered */
+  display: flex; /* Ensures text aligns when button is resized */
+  justify-content: center; /* Horizontal centering */
+  align-items: center;/* Vertical centering */
+}
+
+.round-border{
+  border-radius: 20px;
 }
 
 
