@@ -46,7 +46,7 @@ const Header = () => {
                         >
                             <NavDropdown.Item href="#action/3.1">Share your Joy</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Freedom through Digital Education</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Other Projects</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/other-project">Other Projects</NavDropdown.Item>
                         </NavDropdown>
 
                         <NavDropdown
