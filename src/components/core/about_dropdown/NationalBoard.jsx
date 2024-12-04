@@ -4,7 +4,7 @@ const NationalBoard = ({ boardMember }) => {
   return (
     <div className="flex flex-col ">
 
-      <div className="w-full bg-gradient-to-t from-green-200 via-transparent to-orange-200  flex items-center justify-center text-center h-[320px] mb-2 ">
+      <div className="w-full bg-gradient-to-t from-green-200 via-transparent to-orange-200  flex items-center justify-center text-center h-[75vh] mb-2 ">
         <p className="font-montserrat font-extrabold text-[58px] leading-[80px] ">
           National Board of 41 India
         </p>

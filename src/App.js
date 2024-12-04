@@ -19,7 +19,7 @@ import FortyOneInternationals from './components/links/FortyOneInternationals.js
 import LadiesCircleIndia from './components/links/LadiesCircleIndia.jsx';
 import RoundTableIndia from './components/links/RoundTableIndia.jsx';
 import TangetIndia from './components/links/TangetIndia.jsx';
-
+import ActiveCities from './components/core/about_dropdown/ActiveCities.jsx';
 function App() {
   const [boardMember, setBoardMember]=useState(BoardMember);
   return (
@@ -48,7 +48,7 @@ function App() {
       <Route path="/links-tangetIndia" element={<TangetIndia/>} />
 
       <Route path='/about-nationalBoard' element={<NationalBoard boardMember={boardMember}/>}/>
-
+      <Route path='/about-activecities' element={<ActiveCities/>}/>
     </Routes>
       
     <Footer/>
