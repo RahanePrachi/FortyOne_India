@@ -5,10 +5,8 @@ import Footer from './comman__components/footer/Footer';
 import {BoardMember} from './data/board_member_data';
 import NationalBoard from './components/core/about_dropdown/NationalBoard';
 import { BrowserRouter as Router, Routes, Route ,Link} from 'react-router-dom';
-<<<<<<< HEAD
-// import Other_project from './components/core/project_dropdown/Other_project';
-// import Contact from './components/contact/Contact';
-=======
+
+
 import Events from './components/events/Events';
 import Contact from './components/contact/Contact';
 import Other_project from './components/core/project_dropdown/Other_project.jsx'
@@ -21,19 +19,19 @@ import FortyOneInternationals from './components/links/FortyOneInternationals.js
 import LadiesCircleIndia from './components/links/LadiesCircleIndia.jsx';
 import RoundTableIndia from './components/links/RoundTableIndia.jsx';
 import TangetIndia from './components/links/TangetIndia.jsx';
->>>>>>> 3dad2e25bd989f3b45564c1ba90f3a54d22816cf
+
 function App() {
   const [boardMember, setBoardMember]=useState(BoardMember);
   return (
     <Router>
       <Header/>
-<<<<<<< HEAD
+
       {/* <Other_project/> */}
       {/* <Contact/> */}
-      <NationalBoard boardMember={boardMember}/>
-=======
+      {/* <NationalBoard boardMember={boardMember}/> */}
+
      
->>>>>>> 3dad2e25bd989f3b45564c1ba90f3a54d22816cf
+
     <Routes>
       
       <Route path="/events" element={<Events />} />
@@ -48,6 +46,8 @@ function App() {
       <Route path="/links-ladiesCircleIndia" element={<LadiesCircleIndia/>} />
       <Route path="/links-roundTableIndia" element={<RoundTableIndia/>} />
       <Route path="/links-tangetIndia" element={<TangetIndia/>} />
+
+      <Route path='/about-nationalBoard' element={<NationalBoard boardMember={boardMember}/>}/>
 
     </Routes>
       
