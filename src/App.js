@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import Header from './comman__components/header/Header'
 import Footer from './comman__components/footer/Footer';
+import {BoardMember} from './data/board_member_data';
+import NationalBoard from './components/core/about_dropdown/NationalBoard';
 import { BrowserRouter as Router, Routes, Route ,Link} from 'react-router-dom';
+
+
 import Events from './components/events/Events';
 import Contact from './components/contact/Contact';
 import Other_project from './components/core/project_dropdown/Other_project.jsx'
@@ -15,11 +19,19 @@ import FortyOneInternationals from './components/links/FortyOneInternationals.js
 import LadiesCircleIndia from './components/links/LadiesCircleIndia.jsx';
 import RoundTableIndia from './components/links/RoundTableIndia.jsx';
 import TangetIndia from './components/links/TangetIndia.jsx';
+
 function App() {
+  const [boardMember, setBoardMember]=useState(BoardMember);
   return (
     <Router>
       <Header/>
+
+      {/* <Other_project/> */}
+      {/* <Contact/> */}
+      {/* <NationalBoard boardMember={boardMember}/> */}
+
      
+
     <Routes>
       
       <Route path="/events" element={<Events />} />
@@ -34,6 +46,8 @@ function App() {
       <Route path="/links-ladiesCircleIndia" element={<LadiesCircleIndia/>} />
       <Route path="/links-roundTableIndia" element={<RoundTableIndia/>} />
       <Route path="/links-tangetIndia" element={<TangetIndia/>} />
+
+      <Route path='/about-nationalBoard' element={<NationalBoard boardMember={boardMember}/>}/>
 
     </Routes>
       
