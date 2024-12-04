@@ -47,7 +47,7 @@ const Header = () => {
                         >
                             <NavDropdown.Item href="#action/3.1">Share your Joy</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Freedom through Digital Education</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Other Projects</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/other-project">Other Projects</NavDropdown.Item>
                         </NavDropdown>
 
                         <NavDropdown
@@ -55,10 +55,10 @@ const Header = () => {
                             id="basic-nav-dropdown"
                             className="custom-dropdown"
                         >
-                            <NavDropdown.Item href="#action/3.1">Selfie</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Fellowship</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Hoppenings</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Others</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/communication-selfie">Selfie</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/communication-fellowship">Fellowship</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/communication-hoppenings">Hoppenings</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/communication-others">Others</NavDropdown.Item>
                         </NavDropdown>
 
                         <NavDropdown
@@ -66,11 +66,11 @@ const Header = () => {
                             id="basic-nav-dropdown"
                             className="custom-dropdown"
                         >
-                            <NavDropdown.Item href="#action/3.1">41 International</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Tanget India</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Round Table India</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Ladies Circle India</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">41 BnB</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/links-fortyOneInternational">41 International</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/links-tangetIndia">Tanget India</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/links-roundTableIndia">Round Table India</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/links-ladiesCircleIndia">Ladies Circle India</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/links-fortyOneBnB">41 BnB</NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Link as={Link} to="/events">Events</Nav.Link>
                         <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
