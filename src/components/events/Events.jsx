@@ -24,7 +24,7 @@ const Events = () => {
     ];
 
     return (
-        <div>
+        <div className='pb-5 mb-5'>
             {/* Header Section */}
             <div
                 className="d-flex justify-content-center align-items-center position-relative"
@@ -54,7 +54,7 @@ const Events = () => {
                 <Row>
                     {
                         eventData.map((event, index) => (
-                            <Col xs={12} sm={6} md={4} lg={3} className='text-center p-2' key={index}>
+                            <Col xs={12} sm={6} md={4} lg={3} className='text-center p-3' key={index}>
                                 <Card className="h-100">
                                     <Card.Img variant="top" src={event.image_url} />
                                     <Card.Body>
