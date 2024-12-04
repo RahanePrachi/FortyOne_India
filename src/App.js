@@ -6,6 +6,15 @@ import { BrowserRouter as Router, Routes, Route ,Link} from 'react-router-dom';
 import Events from './components/events/Events';
 import Contact from './components/contact/Contact';
 import Other_project from './components/core/project_dropdown/Other_project.jsx'
+import Others from './components/communication/Others.jsx';
+import Selfie from './components/communication/Selfie.jsx';
+import Hoppenings from './components/communication/Hoppenings.jsx';
+import Fellowship from './components/communication/Fellowship.jsx';
+import FortyOneBnB from './components/links/FortyOneBnB.jsx';
+import FortyOneInternationals from './components/links/FortyOneInternationals.jsx';
+import LadiesCircleIndia from './components/links/LadiesCircleIndia.jsx';
+import RoundTableIndia from './components/links/RoundTableIndia.jsx';
+import TangetIndia from './components/links/TangetIndia.jsx';
 function App() {
   return (
     <Router>
@@ -16,7 +25,16 @@ function App() {
       <Route path="/events" element={<Events />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/other-project" element={ <Other_project/>} />
-      {/* <Route path="/events" element={<Events/>} /> */}
+      <Route path="/communication-others" element={<Others/>} />
+      <Route path="/communication-selfie" element={<Selfie/>} />
+      <Route path="/communication-hoppenings" element={<Hoppenings/>} />
+      <Route path="/communication-fellowship" element={<Fellowship/>} />
+      <Route path="/links-fortyOneBnB" element={<FortyOneBnB/>} />
+      <Route path="/links-fortyOneInternational" element={<FortyOneInternationals/>} />
+      <Route path="/links-ladiesCircleIndia" element={<LadiesCircleIndia/>} />
+      <Route path="/links-roundTableIndia" element={<RoundTableIndia/>} />
+      <Route path="/links-tangetIndia" element={<TangetIndia/>} />
+
     </Routes>
       
     <Footer/>
