@@ -57,7 +57,7 @@ function App() {
       <Route path='/about-nationalBoard' element={<NationalBoard boardMember={boardMember}/>}/>
       {/* <Route path='/about-activeCity' element={<ActiveCities />}/> */}
       <Route path='/about-activecities' element={<ActiveCities/>}/>
-      <Route path='/about' element={<About/>}/>
+      <Route path='/' element={<About/>}/>
     </Routes>
       
     <Footer/>

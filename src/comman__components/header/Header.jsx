@@ -15,7 +15,7 @@ const Header = () => {
         <Navbar expand="lg" className="bg-body-tertiary justify-content-center">
             <Container className="d-flex justify-content-center">
                 
-                <Navbar.Brand href="/" ><img src={logo} style={{maxHeight:"40px "}} alt="41 India logo"/></Navbar.Brand>
+                <Navbar.Brand href="/" ><img as={Link} to="/" src={logo} style={{maxHeight:"40px "}} alt="41 India logo"/></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
                     <Nav className="me-auto justify-content-center w-100">
@@ -24,7 +24,7 @@ const Header = () => {
                             id="basic-nav-dropdown"
                             className="custom-dropdown"
                         >
-                            <NavDropdown.Item as={Link} to="/about">About</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/">About</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">History</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/about-nationalBoard">National Board</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.4">Roll of Honour</NavDropdown.Item>
