@@ -20,15 +20,13 @@ import LadiesCircleIndia from './components/links/LadiesCircleIndia.jsx';
 import RoundTableIndia from './components/links/RoundTableIndia.jsx';
 import TangetIndia from './components/links/TangetIndia.jsx';
 import ActiveCities from './components/core/about_dropdown/ActiveCities.jsx';
+import About from './components/core/about_dropdown/About.jsx';
 function App() {
   const [boardMember, setBoardMember]=useState(BoardMember);
   return (
     <Router>
       <Header/>
 
-      {/* <Other_project/> */}
-      {/* <Contact/> */}
-      {/* <NationalBoard boardMember={boardMember}/> */}
 
      
 
@@ -49,6 +47,7 @@ function App() {
 
       <Route path='/about-nationalBoard' element={<NationalBoard boardMember={boardMember}/>}/>
       <Route path='/about-activecities' element={<ActiveCities/>}/>
+      <Route path='/about' element={<About/>}/>
     </Routes>
       
     <Footer/>

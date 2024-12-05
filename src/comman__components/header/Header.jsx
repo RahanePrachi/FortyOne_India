@@ -24,7 +24,7 @@ const Header = () => {
                             id="basic-nav-dropdown"
                             className="custom-dropdown"
                         >
-                            <NavDropdown.Item href="#action/3.1">About</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/about">About</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">History</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/about-nationalBoard">National Board</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.4">Roll of Honour</NavDropdown.Item>
