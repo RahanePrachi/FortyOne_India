@@ -19,8 +19,10 @@ import FortyOneInternationals from './components/links/FortyOneInternationals.js
 import LadiesCircleIndia from './components/links/LadiesCircleIndia.jsx';
 import RoundTableIndia from './components/links/RoundTableIndia.jsx';
 import TangetIndia from './components/links/TangetIndia.jsx';
-import ActiveCities from './components/about_us/ActiveCities.jsx';
+// import ActiveCities from './components/about_us/ActiveCities.jsx';
 import ActiveCities from './components/core/about_dropdown/ActiveCities.jsx';
+import FreedomThroughDigitalEducation from './components/projects/FreedomThroughDigitalEducation.jsx';
+import ShareYourJoy from './components/projects/ShareYourJoy.jsx';
 function App() {
   const [boardMember, setBoardMember]=useState(BoardMember);
   return (
@@ -47,10 +49,12 @@ function App() {
       <Route path="/links-ladiesCircleIndia" element={<LadiesCircleIndia/>} />
       <Route path="/links-roundTableIndia" element={<RoundTableIndia/>} />
       <Route path="/links-tangetIndia" element={<TangetIndia/>} />
+    
+      <Route path="/projects-freedomDigital" element={<FreedomThroughDigitalEducation/>} />
+      <Route path="/projects-shareYourJoy" element={<ShareYourJoy/>} />
 
       <Route path='/about-nationalBoard' element={<NationalBoard boardMember={boardMember}/>}/>
-      <Route path='/about-activeCity' element={<ActiveCities />}/>
-
+      {/* <Route path='/about-activeCity' element={<ActiveCities />}/> */}
       <Route path='/about-activecities' element={<ActiveCities/>}/>
     </Routes>
       
