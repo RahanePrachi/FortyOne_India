@@ -28,6 +28,7 @@ const Header = () => {
                             <NavDropdown.Item href="#action/3.2">History</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/about-nationalBoard">National Board</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.4">Roll of Honour</NavDropdown.Item>
+                            {/* <NavDropdown.Item as={Link} to="/about-activeCity">Active Cities</NavDropdown.Item> */}
                             <NavDropdown.Item as={Link} to="about-activecities">Active Cities</NavDropdown.Item>
                         </NavDropdown>
 
@@ -45,8 +46,8 @@ const Header = () => {
                             id="basic-nav-dropdown"
                             className="custom-dropdown"
                         >
-                            <NavDropdown.Item href="#action/3.1">Share your Joy</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">Freedom through Digital Education</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/projects-shareYourJoy">Share your Joy</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/projects-freedomDigital">Freedom through Digital Education</NavDropdown.Item>
                             <NavDropdown.Item as={Link} to="/other-project">Other Projects</NavDropdown.Item>
                         </NavDropdown>
 
