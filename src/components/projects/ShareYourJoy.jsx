@@ -1,8 +1,12 @@
 import React from 'react'
-
+import SYJProjects from './SYJProjects'
 const ShareYourJoy = () => {
   return (
-    <div>ShareYourJoy</div>
+    <div>
+
+      {/*  */}
+     <SYJProjects/>
+    </div>
   )
 }
 

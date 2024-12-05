@@ -34,11 +34,11 @@ const FeatureProject = () => {
       ></div>
 
       <Container className="d-flex flex-column align-items-center justify-content-center text-center">
-        <Row className="w-100 mb-32">
+        <Row className="w- 10/12 mb-32 mx-auto">
           <h2 className="fw-bold display-4 font-montserrat mt-20">
             FEATURED PROJECTS
           </h2>
-          <p className="font-montserrat m-4">
+          <p className="font-montserrat m-4 w-10/12 mx-auto">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Dummy text ever since an unknown printer took a galley of
             type and scrambled it to make a type specimen book.
