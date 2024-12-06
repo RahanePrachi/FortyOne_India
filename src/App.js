@@ -6,7 +6,6 @@ import {BoardMember} from './data/board_member_data';
 import NationalBoard from './components/core/about_dropdown/NationalBoard';
 import { BrowserRouter as Router, Routes, Route ,Link} from 'react-router-dom';
 
-
 import Events from './components/events/Events';
 import Contact from './components/contact/Contact';
 import Other_project from './components/core/project_dropdown/Other_project.jsx'
@@ -26,6 +25,7 @@ import About from './components/core/about_dropdown/About.jsx';
 
 import FreedomThroughDigitalEducation from './components/projects/FreedomThroughDigitalEducation.jsx';
 import ShareYourJoy from './components/projects/ShareYourJoy.jsx';
+import RollOfHonors from './components/core/about_dropdown/RollOfHonors.jsx';
 
 function App() {
   const [boardMember, setBoardMember]=useState(BoardMember);
@@ -57,6 +57,7 @@ function App() {
       <Route path='/about-nationalBoard' element={<NationalBoard boardMember={boardMember}/>}/>
       {/* <Route path='/about-activeCity' element={<ActiveCities />}/> */}
       <Route path='/about-activecities' element={<ActiveCities/>}/>
+      <Route path='/about-rollofhonors' element={<RollOfHonors/>}/>
 
       <Route path='/about' element={<About/>}/>
       <Route path='/programs-yap' element={<YAP/>}/>

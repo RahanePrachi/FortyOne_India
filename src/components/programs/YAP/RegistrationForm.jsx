@@ -68,8 +68,25 @@ const RegistrationForm = () => {
     // Reset
     setFormData({
       firstName: "",
-      lastName: "",
-      email: "",
+    lastName: "",
+    dob: "",
+    passportNo: "",
+    Nationality: "",
+    email: "",
+    motherTongue: "",
+    mobileno: "",
+    profession: "",
+    address: "",
+    city: "",
+    pincode: "",
+    fName: "",
+    fClub: "",
+    fmobno: "",
+    femail: "",
+    educationalhistory: "",
+    finalDegree: "",
+    yapsTour: "",
+    contries: "",
     });
   };
   return (
@@ -200,7 +217,7 @@ const RegistrationForm = () => {
                 Mother Tongue
               </p>
               <input
-                required
+                
                 type="text"
                 name="motherTongue"
                 value={motherTongue}
@@ -236,7 +253,7 @@ const RegistrationForm = () => {
                 name="email"
                 value={email}
                 onChange={handleOnChange}
-                placeholder="Enter your mother tongue"
+                placeholder="Enter your email"
                 className="w-full rounded-[0.5rem] p-[12px] text-[#586166]"
               />
             </label>
@@ -250,7 +267,7 @@ const RegistrationForm = () => {
                 name="profession"
                 value={profession}
                 onChange={handleOnChange}
-                placeholder="Enter your mobile number"
+                placeholder="Enter your profession"
                 className="w-full rounded-[0.5rem] text-[#586166] p-[12px] "
               />
             </label>
@@ -361,7 +378,7 @@ const RegistrationForm = () => {
               </p>
               <input
                 required
-                type="text"
+                type="email"
                 name="femail"
                 value={femail}
                 onChange={handleOnChange}
@@ -414,7 +431,7 @@ const RegistrationForm = () => {
               Educational History
             </p>
             <textarea
-              required
+              
               name="educationalhistory"
               value={educationalhistory}
               onChange={handleOnChange}
@@ -425,10 +442,10 @@ const RegistrationForm = () => {
           </label>
           <label className="w-full">
             <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#586166]">
-              Final Degree <sup className="text-red-700">*</sup>
+              Final Degree 
             </p>
             <textarea
-              required
+             
               name="finalDegree"
               value={finalDegree}
               onChange={handleOnChange}
@@ -450,11 +467,11 @@ const RegistrationForm = () => {
             <label className="w-full">
               <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#586166]">
                 Have you ever travelled on a YAPS tour?
-                <sup className="text-red-700">*</sup>
+               
               </p>
               <div className="relative">
                 <select
-                  required
+                  
                   name="yapsTour"
                   value={yapsTour} // Update state variable to match
                   onChange={handleOnChange}
@@ -488,10 +505,10 @@ const RegistrationForm = () => {
             <label className="w-full">
               <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#586166]">
                 Which countries have you travelled to? (with and without YAPS)
-                <sup className="text-red-700">*</sup>
+                
               </p>
               <input
-                required
+                
                 type="text"
                 name="contries"
                 value={contries}
@@ -505,11 +522,11 @@ const RegistrationForm = () => {
           <label className="w-full">
             <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#586166]">
               Which YAP Tour are you interested in?
-              <sup className="text-red-700">*</sup>
+              
             </p>
             <div className="relative">
               <select
-                required
+                
                 name="yapsTour"
                 value={yapsTour} // Update state variable to match
                 onChange={handleOnChange}
@@ -578,7 +595,7 @@ const RegistrationForm = () => {
               </p>
               <input
                 required
-                type="text"
+                type="email"
                 name="email"
                 value={email}
                 onChange={handleOnChange}
@@ -607,7 +624,7 @@ const RegistrationForm = () => {
               Do you participate in any sports or other activities?
             </p>
             <textarea
-              required
+              
               name="sportActivity"
               //value={sportActivity}
               onChange={handleOnChange}
@@ -619,10 +636,10 @@ const RegistrationForm = () => {
           <label className="w-full">
             <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#586166]">
               Do you have any diseases, allergies or medical information you
-              wish to inform us about? <sup className="text-red-700">*</sup>
+              wish to inform us about? 
             </p>
             <textarea
-              required
+              
               name="mediacalInfo"
               //value={medicalInfo}
               onChange={handleOnChange}
@@ -639,7 +656,7 @@ const RegistrationForm = () => {
               </p>
               <div className="relative">
                 <select
-                  required
+                 
                   name="smoker"
                   //value={smoker} // Update state variable to match
                   onChange={handleOnChange}
@@ -676,7 +693,7 @@ const RegistrationForm = () => {
               </p>
               <div className="relative">
                 <select
-                  required
+                  
                   name="drinker"
                   //value={drinker}
                   onChange={handleOnChange}
@@ -712,11 +729,11 @@ const RegistrationForm = () => {
             <label className="w-full">
               <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#586166]">
                 Have you ever travelled on a YAPS tour?
-                <sup className="text-red-700">*</sup>
+                
               </p>
               <div className="relative">
                 <select
-                  required
+                 
                   name="yapsTour"
                   //value={yapsTour} // Update state variable to match
                   onChange={handleOnChange}
@@ -750,10 +767,10 @@ const RegistrationForm = () => {
             <label className="w-full">
               <p className="mb-1 text-[0.875rem] leading-[1.375rem] text-[#586166]">
                 Which countries have you travelled to? (with and without YAPS)
-                <sup className="text-red-700">*</sup>
+                
               </p>
               <input
-                required
+                
                 type="text"
                 name="contries"
                 //value={contries}
@@ -771,7 +788,7 @@ const RegistrationForm = () => {
               </p>
               <div className="relative">
                 <select
-                  required
+                  
                   name="vegetarian"
                   //value={vegetarian} // Update state variable to match
                   onChange={handleOnChange}
@@ -808,7 +825,7 @@ const RegistrationForm = () => {
               Is there any additional information you wish to provide?
             </p>
             <textarea
-              required
+              
               name="aditionalInfo"
               //value={additionalInfo}
               onChange={handleOnChange}
@@ -854,7 +871,7 @@ const RegistrationForm = () => {
               Please provide the UTR of your payment 
               </p>
               <input
-                required
+               
                 type="text"
                 name="paymentInfo"
                
@@ -868,7 +885,7 @@ const RegistrationForm = () => {
               Enter the bank where your payment was made
               </p>
               <input
-                required
+               
                 type="text"
                 name="bankpaymentmade"
                
@@ -884,7 +901,7 @@ const RegistrationForm = () => {
               Enter the bank branch where your payment was made
               </p>
               <input
-                required
+               
                 type="text"
                 name="bankbranch"
                 
