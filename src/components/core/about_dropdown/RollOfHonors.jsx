@@ -3,7 +3,7 @@ import React from "react";
 const RollOfHonors = () => {
   return (
     <div className=" ">
-      <div className="w-screen bg-gradient-to-t from-green-200 via-transparent to-orange-200  flex items-center justify-center text-center h-[75vh]  ">
+      <div className="w-screen bg-gradient-to-t from-green-200 via-transparent to-orange-200  flex items-center justify-center text-center h-[70vh]  ">
         <p className="font-custom font-extrabold text-6xl h-[80px] leading-6  ">
           Roll of Honors
         </p>

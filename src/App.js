@@ -22,7 +22,7 @@ import TangetIndia from './components/links/TangetIndia.jsx';
 import ActiveCities from './components/core/about_dropdown/ActiveCities.jsx';
 import YAP from './components/programs/YAP/YAP.jsx';
 import About from './components/core/about_dropdown/About.jsx';
-
+import History from './components/core/about_dropdown/History.jsx';
 import FreedomThroughDigitalEducation from './components/projects/FreedomThroughDigitalEducation.jsx';
 import ShareYourJoy from './components/projects/ShareYourJoy.jsx';
 import RollOfHonors from './components/core/about_dropdown/RollOfHonors.jsx';
@@ -58,7 +58,7 @@ function App() {
       {/* <Route path='/about-activeCity' element={<ActiveCities />}/> */}
       <Route path='/about-activecities' element={<ActiveCities/>}/>
       <Route path='/about-rollofhonors' element={<RollOfHonors/>}/>
-
+      <Route path='/about-history' element={<History/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/programs-yap' element={<YAP/>}/>
 

@@ -75,7 +75,8 @@ const ShareYourJoy = () => {
     height: '75vh', // Match the container height
   };
 
-  return (<div>
+  return (
+  <div>
     <Carousel activeIndex={index} onSelect={handleSelect} interval={1000}>
       <Carousel.Item style={carouselItemStyle}>
         {/* Image */}
