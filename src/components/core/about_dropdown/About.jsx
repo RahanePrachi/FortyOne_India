@@ -4,6 +4,7 @@ import { FcApproval } from "react-icons/fc";
 import Testimonial from "./Testimonial";
 import { useForm } from "react-hook-form";
 import FeatureProject from "./FeatureProject";
+import AboutCarousel from "../../about_us/AboutCarousel";
 
 const About = () => {
   const [loading, setLoading] = useState(false);
@@ -32,12 +33,7 @@ const About = () => {
   return (
     <div>
       {/* header Section */}
-
-      <div>
-        <div>
-          
-        </div>
-      </div>
+      <AboutCarousel/>
 
       {/* About us section */}
 

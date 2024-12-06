@@ -1,52 +1,115 @@
 .custom-dropdown .dropdown-menu {
-  border-radius: 0 !important; /* Sharp corners */
+  border-radius: 0 !important;
+  /* Sharp corners */
 }
+
 .custom-outline {
-  border-color: #7c7c91 !important; /* Custom outline color */
-  color: #000099 !important; /* Custom text color */
-  border-radius: 20px; /* Rounded corners */
-  text-align: center; /* Ensure text is centered */
-  display: flex; /* Ensures text aligns when button is resized */
-  justify-content: center; /* Horizontal centering */
+  border-color: #7c7c91 !important;
+  /* Custom outline color */
+  color: #000099 !important;
+  /* Custom text color */
+  border-radius: 20px;
+  /* Rounded corners */
+  text-align: center;
+  /* Ensure text is centered */
+  display: flex;
+  /* Ensures text aligns when button is resized */
+  justify-content: center;
+  /* Horizontal centering */
   align-items: center;
-   /* Vertical centering */
+  /* Vertical centering */
 }
 
 .custom-outline:hover {
-  background-color: #124F92 !important; /* Change background on hover */
-  color: white !important; /* Text color on hover */
+  background-color: #124F92 !important;
+  /* Change background on hover */
+  color: white !important;
+  /* Text color on hover */
+}
+
+.custom-outline-login {
+  border-color: #FFFFFF !important;
+
+  color: white !important;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-outline-login:hover {
+  border-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+  background-color: #124F92 !important;
 }
 
 .custom-filled:hover {
-  background-color: white !important; /* Change background on hover */
-  color: #124F92 !important; /* Text color on hover */
-  
+  background-color: white !important;
+  /* Change background on hover */
+  color: #124F92 !important;
+  /* Text color on hover */
+
 }
 
 .custom-filled {
-  background-color: #124F92 !important; 
-  border-color: #124F92 !important; /* Custom outline color */
-  color: white !important; /* Custom text color */
-  border-radius: 20px; /* Rounded corners */
-  text-align: center; /* Ensure text is centered */
-  display: flex; /* Ensures text aligns when button is resized */
-  justify-content: center; /* Horizontal centering */
-  align-items: center;/* Vertical centering */
+  background-color: #124F92 !important;
+  border-color: #124F92 !important;
+  /* Custom outline color */
+  color: white !important;
+  /* Custom text color */
+  border-radius: 20px;
+  /* Rounded corners */
+  text-align: center;
+  /* Ensure text is centered */
+  display: flex;
+  /* Ensures text aligns when button is resized */
+  justify-content: center;
+  /* Horizontal centering */
+  align-items: center;
+  /* Vertical centering */
 }
 
 .contact-btn {
-  background-color: #2091f9 !important; 
-  border-color: #2091f9 !important; /* Custom outline color */
-  color: white !important; /* Custom text color */
-  border-radius: 20px; /* Rounded corners */
-  text-align: center; /* Ensure text is centered */
-  display: flex; /* Ensures text aligns when button is resized */
-  justify-content: center; /* Horizontal centering */
-  align-items: center;/* Vertical centering */
+  background-color: #2091f9 !important;
+  border-color: #2091f9 !important;
+  /* Custom outline color */
+  color: white !important;
+  /* Custom text color */
+  border-radius: 20px;
+  /* Rounded corners */
+  text-align: center;
+  /* Ensure text is centered */
+  display: flex;
+  /* Ensures text aligns when button is resized */
+  justify-content: center;
+  /* Horizontal centering */
+  align-items: center;
+  /* Vertical centering */
 }
 
-.round-border{
+.round-border {
   border-radius: 20px;
 }
 
 
+
+/* Default font size for larger screens */
+.title {
+  font-size: 58px; /* Font size for larger screens */
+}
+
+.subtitle {
+  font-size: 20px; /* Font size for larger screens */
+}
+
+/* For smaller screens, adjust font size */
+@media (max-width: 767px) {
+  .title {
+      font-size: 32px; /* Smaller font size for mobile screens */
+  }
+
+  .subtitle {
+      font-size: 16px; /* Adjust subtitle font size for mobile */
+  }
+}

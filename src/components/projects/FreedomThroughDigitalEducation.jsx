@@ -95,7 +95,10 @@ const FreedomThroughDigitalEducation = () => {
                             </p>
                         </Col>
                     </Row>
+                    <Row>
+
                     <img src={infograph} style={{ maxHeight: "498.32px", maxWidth: "1036px", alignContent: "center" }} alt="image" />
+                    </Row>
 
                     <ul className='pt-5'
                         style={{
