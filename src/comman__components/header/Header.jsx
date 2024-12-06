@@ -37,7 +37,7 @@ const Header = () => {
                             id="basic-nav-dropdown"
                             className="custom-dropdown"
                         >
-                            <NavDropdown.Item href="#action/3.1">Young Ambassador Program</NavDropdown.Item>
+                            <NavDropdown.Item as={Link} to="/programs-yap">Young Ambassador Program</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Young Internship Program</NavDropdown.Item>
                         </NavDropdown>
 

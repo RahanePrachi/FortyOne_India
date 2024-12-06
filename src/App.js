@@ -21,7 +21,7 @@ import RoundTableIndia from './components/links/RoundTableIndia.jsx';
 import TangetIndia from './components/links/TangetIndia.jsx';
 // import ActiveCities from './components/about_us/ActiveCities.jsx';
 import ActiveCities from './components/core/about_dropdown/ActiveCities.jsx';
-
+import YAP from './components/programs/YAP/YAP.jsx';
 import About from './components/core/about_dropdown/About.jsx';
 
 import FreedomThroughDigitalEducation from './components/projects/FreedomThroughDigitalEducation.jsx';
@@ -58,6 +58,7 @@ function App() {
       {/* <Route path='/about-activeCity' element={<ActiveCities />}/> */}
       <Route path='/about-activecities' element={<ActiveCities/>}/>
       <Route path='/about' element={<About/>}/>
+      <Route path='/programs-yap' element={<YAP/>}/>
     </Routes>
       
     <Footer/>
